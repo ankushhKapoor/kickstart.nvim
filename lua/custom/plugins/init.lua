@@ -1,5 +1,10 @@
--- You can add your own plugins here or in other files in this directory!
---  I promise not to create any merge conflicts in this directory :)
---
--- See the kickstart.nvim README for more information
-return {}
+-- Custom plugin setup loader
+-- This file will be imported in your main `init.lua` using `{ import = 'custom.plugins' }`
+-- It should return a table of plugin specs
+
+return {
+  require 'custom.plugins.harpoon', -- load harpoon plugin config
+  require 'custom.plugins.tmux_navigator', -- load tmux navigator config
+
+  -- You can add more plugins like this:
+}
