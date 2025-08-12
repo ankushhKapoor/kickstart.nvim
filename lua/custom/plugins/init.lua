@@ -5,6 +5,5 @@
 return {
   require 'custom.plugins.harpoon', -- load harpoon plugin config
   require 'custom.plugins.tmux_navigator', -- load tmux navigator config
-
   -- You can add more plugins like this:
 }
